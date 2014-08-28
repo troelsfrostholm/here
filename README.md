@@ -10,19 +10,19 @@ Here is a bash script that enables the use of bookmarks when navigating folders 
 
 ### Usage
 Creating a bookmark for the current folder:
-> here [bookmark-name]
+`> here [bookmark-name]`
 
 Going to a bookmarked folder
-> go [bookmark-name]
+`> go [bookmark-name]`
 
 Listing all bookmarks and the folders they point to
-> where
+`> where`
 
 Listing the path pointed to by a bookmark
-> where bookmark-name
+`> where bookmark-name`
 
 Removing a bookmark
-> del bookmark-name
+`> del bookmark-name`
 
 ### Technical details
 
