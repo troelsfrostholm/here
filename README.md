@@ -31,7 +31,7 @@ Removing a bookmark:
 
 ### Technical details
 
-Here saves the bookmark information in the plain-text file ~/.here
+The bookmark information is saved in the plain-text file ~/.here
 
 The above four commands are implemented as bash functions, so they will shadow any program that may already be installed, called here, go, where or del. 
 
