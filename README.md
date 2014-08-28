@@ -2,7 +2,7 @@
 
 Here is a bash script that enables the use of bookmarks when navigating folders in the shell. 
 
-### Installation (Linux)
+### Installation (Linux and Mac)
 1. Clone the repository with `git clone git@bitbucket.org:troelsfrostholm/here.git`
 
 2. Source the bash script file named `here`, e.g. by adding the following line to ~/.bashrc:
