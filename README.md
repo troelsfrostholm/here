@@ -13,19 +13,19 @@ Creating a bookmark for the current folder:
 
 `> here [bookmark-name]`
 
-Going to a bookmarked folder
+Going to a bookmarked folder:
 
 `> go [bookmark-name]`
 
-Listing all bookmarks and the folders they point to
+Listing all bookmarks and the folders they point to:
 
 `> where`
 
-Listing the path pointed to by a bookmark
+Listing the path pointed to by a bookmark:
 
 `> where bookmark-name`
 
-Removing a bookmark
+Removing a bookmark:
 
 `> del bookmark-name`
 
