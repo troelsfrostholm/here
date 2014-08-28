@@ -7,7 +7,7 @@ Here is a bash script that enables the use of bookmarks when navigating folders 
 
 2. Source the bash script file named `here`, e.g. by adding the following line to ~/.bashrc:
 
-source /path/to/repository/here
+`source /path/to/repository/here`
 
 ### Usage
 Creating a bookmark for the current folder:
