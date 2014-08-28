@@ -1,0 +1,48 @@
+#!/bin/bash
+
+FILE=~/.here
+
+function here() {
+    if [ -n $FILE ]; then touch $FILE; fi
+    if [ -n "$1" ]
+    then
+	local key=$1
+    else
+	local key="here"
+    fi
+    printf "`sed /$key\ *:/d $FILE`\n$key : `pwd`" > $FILE
+}
+
+function go() {
+    if [ -n "$1" ]
+    then
+	local key=$1
+    else
+	local key="here"
+    fi
+    local awkprogram='BEGIN { FS=" *: *" } ; /'^$key'\ *:/ {print $2}'
+    local target=`awk "$awkprogram" $FILE`
+    if [ -n "$target" ]; then
+	cd "$target"
+    else
+	echo "key not found: $key"
+    fi
+}
+
+function where() {
+    if [ ! -f $FILE ]; then return; fi
+    if [ -n "$1" ]
+    then
+	awk -F\ *:\ * /^$1\ *:/\ {print\ \$2} $FILE
+    else
+	cat $FILE
+	echo ""
+    fi
+}
+
+function del() {
+    if [ -n "$1" ]
+    then
+	printf "`sed /^$1\ *:\ */d $FILE`" > $FILE
+    fi
+}
