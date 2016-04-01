@@ -29,6 +29,10 @@ Removing a bookmark:
 
 `> del bookmark-name`
 
+### Bash completion
+
+To enable bash completion, make sure you have bash-completion installed on your system. Then make a symlink of here-completion.bash in /etc/bash_completion.d/ and re-source your ~/.bashrc or equivalent.
+
 ### Technical details
 
 The bookmark information is saved in the plain-text file ~/.here
