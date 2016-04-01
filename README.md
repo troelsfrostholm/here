@@ -2,31 +2,36 @@
 
 Here is a bash script that enables the use of bookmarks when navigating folders in the shell. 
 
-### Installation (Linux)
+### Installation (Linux and Mac)
 1. Clone the repository with `git clone git@bitbucket.org:troelsfrostholm/here.git`
 
 2. Source the bash script file named `here`, e.g. by adding the following line to ~/.bashrc:
-source /path/to/repository/here
+`source /path/to/repository/here`
 
 ### Usage
 Creating a bookmark for the current folder:
-> here [bookmark-name]
 
-Going to a bookmarked folder
-> go [bookmark-name]
+`> here [bookmark-name]`
 
-Listing all bookmarks and the folders they point to
-> where
+Going to a bookmarked folder:
 
-Listing the path pointed to by a bookmark
-> where bookmark-name
+`> go [bookmark-name]`
 
-Removing a bookmark
-> del bookmark-name
+Listing all bookmarks and the folders they point to:
+
+`> where`
+
+Listing the path pointed to by a bookmark:
+
+`> where bookmark-name`
+
+Removing a bookmark:
+
+`> del bookmark-name`
 
 ### Technical details
 
-Here saves the bookmark information in the plain-text file ~/.here
+The bookmark information is saved in the plain-text file ~/.here
 
 The above four commands are implemented as bash functions, so they will shadow any program that may already be installed, called here, go, where or del. 
 
