@@ -1,6 +1,6 @@
 # README #
 
-Here is a bash script that enables the use of bookmarks when navigating folders in the shell. 
+"Here" is a bash script that enables the use of bookmarks when navigating folders in the shell. 
 
 ### Installation (Linux and Mac)
 1. Clone the repository with `git clone git@bitbucket.org:troelsfrostholm/here.git`
