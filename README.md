@@ -23,7 +23,7 @@ Listing the path pointed to by a bookmark:
 
 Removing a bookmark:
 
-`> del bookmark-name`
+`> del [bookmark-name]`
 
 In particular, bookmark-name can be omitted in the above commands, and the standard name 'here' will be used automatically. 
 
