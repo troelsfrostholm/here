@@ -43,6 +43,10 @@ function where() {
 function del() {
     if [ -n "$1" ]
     then
-	printf "`sed /^$1\ *:\ */d $FILE`" > $FILE
+	KEY=$1
+    else
+	KEY=here
     fi
+    printf "`sed /^$KEY\ *:\ */d $FILE`" > $FILE
+
 }
