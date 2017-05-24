@@ -17,17 +17,18 @@ Going to a bookmarked folder:
 
 `> go [bookmark-name]`
 
-Listing all bookmarks and the folders they point to:
-
-`> where`
-
 Listing the path pointed to by a bookmark:
 
-`> where bookmark-name`
+`> where [bookmark-name]`
+
+In particular, bookmark-name can be omitted in the above commands, and the standard name 'here' will be used automatically. 
 
 Removing a bookmark:
 
 `> del bookmark-name`
+
+### Tips
+If bash completion is enabled, one can get a list of all bookmarks by pressing tab after typing one of the above commands. 
 
 ### Bash completion
 
