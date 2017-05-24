@@ -33,11 +33,11 @@ function where() {
     if [ ! -f $FILE ]; then return; fi
     if [ -n "$1" ]
     then
-	awk -F\ *:\ * /^$1\ *:/\ {print\ \$2} $FILE
+	KEY=$1
     else
-	cat $FILE
-	echo ""
+	KEY=here
     fi
+    awk -F\ *:\ * /^$KEY\ *:/\ {print\ \$2} $FILE
 }
 
 function del() {
