@@ -1,6 +1,6 @@
 # README #
 
-Here is a bash script that enables the use of bookmarks when navigating folders in the shell. 
+"Here" is a bash script that enables the use of bookmarks when navigating folders in the shell. 
 
 ### Installation (Linux and Mac)
 1. Clone the repository with `git clone git@bitbucket.org:troelsfrostholm/here.git`
@@ -28,6 +28,10 @@ Listing the path pointed to by a bookmark:
 Removing a bookmark:
 
 `> del bookmark-name`
+
+### Bash completion
+
+To enable bash completion, make sure you have bash-completion installed on your system. Then make a symlink of here-completion.bash in /etc/bash_completion.d/ and re-source your ~/.bashrc or equivalent.
 
 ### Technical details
 
